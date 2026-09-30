@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+* {
+    margin-top: 5px;
+    font-weight:normal;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div{
+    font-size: x-large;
+}
+
+
+b{
+    color: #9191ff;
+}
+
+textarea{
+    resize: none;
+    outline: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px;
+    color: aliceblue;
+    background-color: #20182e;
+}
+
+button {
+    height: 80px;
+    width: 250px;
+    background-color: whitesmoke;
+    border-color: #20182e;
+    border-radius: 10px;
+
+}
+
+textarea {
+    width: 100%;
+    max-width: 600px;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+#empaneida {
+    align-items: center;
+}
+
+img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80%;
+    width: 80%;
+}</style></link>
+    </head>
+
+    <body>
+        <div class="box1">
+            <h1>saudações, colega ou amigo!</h1>
+            <p>digite sua <b>frase</b> ou <b>palavra</b> favorita...</p>
+            <textarea rows="5" id="caixa1" placeholder="digite aqui......." id="caixa1"></textarea>
+        </div>
+        <div class="box2">
+            <button type="button" onclick=aniquilarSite()>clique aqui para <b>aniquilar o site</b></button>
+            <button type="button" onclick=alertar67()>clique aqui para <b>ver um número legal</b></button>
+            <button onclick=window.print()>clique aqui para <b>imprimir esta página</b></button>
+            <button onclick=empanada()>clique aqui para <b>pedir empanada</b></button>
+        </div>
+        <p id="empaneida"></p>
+    </body>
+<script>function empanada() {
+    document.getElementById("empaneida").innerHTML = '<img src = "https://i.imgur.com/0qeF3R2.jpeg"></img>';
+}
+
+function alertar67() {
+    alert(60+7)
+}
+
+function aniquilarSite() {
+    document.write();
+}</script>
+
+</html>
